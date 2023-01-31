@@ -1,0 +1,9 @@
+services:
+- name: storage-service
+  url: http://localhost:8000
+- name: decision-log-service
+  url: http://localhost:8090
+discovery:
+  resource: discovery.tar.gz
+  service: storage-service
+  decision: config/discovery
